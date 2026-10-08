@@ -1,0 +1,14 @@
+[
+  {
+    "question": "How many days of annual leave do full-time employees receive?",
+    "expected_sources": ["sample_employee_policy.md"]
+  },
+  {
+    "question": "What is the maximum annual leave carry-over?",
+    "expected_sources": ["sample_employee_policy.md"]
+  },
+  {
+    "question": "How much is the remote-work equipment allowance?",
+    "expected_sources": ["sample_employee_policy.md"]
+  }
+]

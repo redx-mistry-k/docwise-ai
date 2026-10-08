@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Which Power Apps, Power BI, SQL, and automation skills are demonstrated in the resume?",
+    "expected_sources": ["candidate_resume.pdf"]
+  },
+  {
+    "question": "What skills and years of experience does the Data Analyst job description require?",
+    "expected_sources": ["data_analyst_job_description.txt"]
+  },
+  {
+    "question": "Compare the candidate resume with the Data Analyst job description, including skills, employment history, experience duration, projects, and undocumented gaps.",
+    "expected_sources": ["candidate_resume.pdf", "data_analyst_job_description.txt"]
+  }
+]

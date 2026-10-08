@@ -1,0 +1,10 @@
+.env
+.venv
+.docwise
+data
+__pycache__
+.pytest_cache
+.playwright-data
+playwright-report
+test-results
+.git

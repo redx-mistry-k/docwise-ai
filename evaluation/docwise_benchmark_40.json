@@ -1,0 +1,235 @@
+[
+  {
+    "id": "fact-01", "category": "factual", "question": "How many annual-leave days do full-time employees receive?",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["20"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["20 paid annual-leave days"]}]
+  },
+  {
+    "id": "fact-02", "category": "factual", "question": "What is the annual leave carry-over limit?",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["5"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["Up to 5 unused days"]}]
+  },
+  {
+    "id": "fact-03", "category": "factual", "question": "When do carried annual-leave days expire?",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["31 March"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["expire on 31 March"]}]
+  },
+  {
+    "id": "fact-04", "category": "factual", "question": "How long is the probation period?",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["6 months"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["6-month probation"]}]
+  },
+  {
+    "id": "fact-05", "category": "factual", "question": "After how many days may an employee regularly work remotely?",
+    "expected_sources": ["remote_work_policy.md"], "expected_answer_contains": ["90 days"],
+    "expected_evidence": [{"source": "remote_work_policy.md", "contains": ["after 90 days"]}]
+  },
+  {
+    "id": "fact-06", "category": "factual", "question": "What is the maximum approved home-office reimbursement per year?",
+    "expected_sources": ["remote_work_policy.md"], "expected_answer_contains": ["$600"],
+    "expected_evidence": [{"source": "remote_work_policy.md", "contains": ["up to $600 per calendar year"]}]
+  },
+  {
+    "id": "fact-07", "category": "factual", "question": "How much of the employee-only health premium does the company pay?",
+    "expected_sources": ["benefits_2026.md"], "expected_answer_contains": ["80 percent"],
+    "expected_evidence": [{"source": "benefits_2026.md", "contains": ["80 percent"]}]
+  },
+  {
+    "id": "fact-08", "category": "factual", "question": "How long are security logs retained?",
+    "expected_sources": ["security_policy.md"], "expected_answer_contains": ["365 days"],
+    "expected_evidence": [{"source": "security_policy.md", "contains": ["retained for 365 days"]}]
+  },
+  {
+    "id": "fact-09", "category": "factual", "question": "What is Product Alpha's battery life?",
+    "expected_sources": ["product_alpha.md"], "expected_answer_contains": ["18 hours"],
+    "expected_evidence": [{"source": "product_alpha.md", "contains": ["18 hours of battery life"]}]
+  },
+  {
+    "id": "fact-10", "category": "factual", "question": "What warranty is included with Product Alpha?",
+    "expected_sources": ["product_alpha.md"], "expected_answer_contains": ["2-year"],
+    "expected_evidence": [{"source": "product_alpha.md", "contains": ["2-year limited hardware warranty"]}]
+  },
+  {
+    "id": "fact-11", "category": "factual", "question": "What is the nightly hotel reimbursement cap?",
+    "expected_sources": ["travel_policy.md"], "expected_answer_contains": ["$180"],
+    "expected_evidence": [{"source": "travel_policy.md", "contains": ["capped at $180 per night"]}]
+  },
+  {
+    "id": "fact-12", "category": "factual", "question": "Which Python version is supported for backend services?",
+    "expected_sources": ["engineering_guide.md"], "expected_answer_contains": ["Python 3.12"],
+    "expected_evidence": [{"source": "engineering_guide.md", "contains": ["Python 3.12"]}]
+  },
+  {
+    "id": "para-01", "category": "paraphrase", "question": "How much vacation can a permanent full-time worker take each year?",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["20"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["20 paid annual-leave days"]}]
+  },
+  {
+    "id": "para-02", "category": "paraphrase", "question": "When can a new starter begin telecommuting on a regular basis?",
+    "expected_sources": ["remote_work_policy.md"], "expected_answer_contains": ["90 days"],
+    "expected_evidence": [{"source": "remote_work_policy.md", "contains": ["eligible for regular remote work after 90 days"]}]
+  },
+  {
+    "id": "para-03", "category": "paraphrase", "question": "What portion of medical cover is funded by the employer?",
+    "expected_sources": ["benefits_2026.md"], "expected_answer_contains": ["80 percent"],
+    "expected_evidence": [{"source": "benefits_2026.md", "contains": ["health-insurance premium"]}]
+  },
+  {
+    "id": "para-04", "category": "paraphrase", "question": "How quickly must a suspected cyber event be escalated?",
+    "expected_sources": ["security_policy.md"], "expected_answer_contains": ["30 minutes"],
+    "expected_evidence": [{"source": "security_policy.md", "contains": ["within 30 minutes"]}]
+  },
+  {
+    "id": "para-05", "category": "paraphrase", "question": "Does the Alpha device have mobile-network connectivity?",
+    "expected_sources": ["product_alpha.md"], "expected_answer_contains": ["does not"],
+    "expected_evidence": [{"source": "product_alpha.md", "contains": ["does not include cellular connectivity"]}]
+  },
+  {
+    "id": "para-06", "category": "paraphrase", "question": "What must engineers have before code can be merged?",
+    "expected_sources": ["engineering_guide.md"], "expected_answer_contains": ["one approving reviewer", "passing automated tests"],
+    "expected_evidence": [{"source": "engineering_guide.md", "contains": ["one approving reviewer", "passing automated tests"]}]
+  },
+  {
+    "id": "multi-01", "category": "multi-hop", "question": "Compare annual leave and sick leave allowances.",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["20", "10"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["20 paid", "10 paid sick-leave"]}]
+  },
+  {
+    "id": "multi-02", "category": "multi-hop", "question": "What approvals and security controls apply to regular remote work?",
+    "expected_sources": ["remote_work_policy.md"], "expected_answer_contains": ["manager approval", "VPN", "company-managed devices"],
+    "expected_evidence": [{"source": "remote_work_policy.md", "contains": ["manager approval", "corporate VPN", "company-managed devices"]}]
+  },
+  {
+    "id": "calc-01", "category": "numeric-calculation", "question": "How many Product Alpha units were sold in the first half of 2025?",
+    "expected_sources": ["sales_report_2025.md"], "expected_answer_contains": ["2,700"],
+    "expected_evidence": [{"source": "sales_report_2025.md", "contains": ["1,200 units in Q1", "1,500 units in Q2"]}]
+  },
+  {
+    "id": "calc-02", "category": "numeric-calculation", "question": "What was total recognized Product Alpha revenue across Q1 and Q2?",
+    "expected_sources": ["sales_report_2025.md"], "expected_answer_contains": ["$132,300"],
+    "expected_evidence": [{"source": "sales_report_2025.md", "contains": ["$58,800", "$73,500"]}]
+  },
+  {
+    "id": "calc-03", "category": "numeric-calculation", "question": "By what percentage did Product Alpha unit sales grow from Q1 to Q2?",
+    "expected_sources": ["sales_report_2025.md"], "expected_answer_contains": ["25 percent"],
+    "expected_evidence": [{"source": "sales_report_2025.md", "contains": ["1,200 units in Q1", "1,500 units in Q2"]}]
+  },
+  {
+    "id": "cross-01", "category": "cross-document", "question": "Compare the annual wellness allowance with the remote-work equipment allowance.",
+    "expected_sources": ["benefits_2026.md", "remote_work_policy.md"], "expected_answer_contains": ["$300", "$600"],
+    "expected_evidence": [
+      {"source": "benefits_2026.md", "contains": ["wellness allowance is $300"]},
+      {"source": "remote_work_policy.md", "contains": ["up to $600"]}
+    ]
+  },
+  {
+    "id": "cross-02", "category": "cross-document", "question": "Compare the deadlines for remote equipment claims and travel expense reports.",
+    "expected_sources": ["remote_work_policy.md", "travel_policy.md"], "expected_answer_contains": ["30 days", "15 days"],
+    "expected_evidence": [
+      {"source": "remote_work_policy.md", "contains": ["within 30 days of purchase"]},
+      {"source": "travel_policy.md", "contains": ["within 15 days after the trip ends"]}
+    ]
+  },
+  {
+    "id": "conflict-01", "category": "contradiction", "question": "Do company documents agree on whether routine remote work is permitted?",
+    "expected_behavior": "describe_conflict", "expected_sources": ["remote_work_policy.md", "legacy_remote_memo.md"],
+    "expected_answer_contains": ["supersedes", "2022"],
+    "expected_evidence": [
+      {"source": "remote_work_policy.md", "contains": ["up to 3 days per week", "supersedes"]},
+      {"source": "legacy_remote_memo.md", "contains": ["routine remote work was not permitted", "superseded"]}
+    ]
+  },
+  {
+    "id": "conflict-02", "category": "contradiction", "question": "Compare the current and historical home-office allowance rules.",
+    "expected_behavior": "describe_conflict", "expected_sources": ["remote_work_policy.md", "legacy_remote_memo.md"],
+    "expected_answer_contains": ["$600", "no home-office allowance", "superseded"],
+    "expected_evidence": [
+      {"source": "remote_work_policy.md", "contains": ["$600 per calendar year"]},
+      {"source": "legacy_remote_memo.md", "contains": ["no home-office allowance"]}
+    ]
+  },
+  {
+    "id": "conflict-03", "category": "contradiction", "question": "Which remote-work document is authoritative and why?",
+    "expected_sources": ["remote_work_policy.md", "legacy_remote_memo.md"], "expected_answer_contains": ["Remote Work Policy 2025", "superseded"],
+    "expected_evidence": [
+      {"source": "remote_work_policy.md", "contains": ["supersedes the 2022"]},
+      {"source": "legacy_remote_memo.md", "contains": ["retained only as a historical record"]}
+    ]
+  },
+  {
+    "id": "conflict-04", "category": "contradiction", "question": "Was there always a remote-work equipment allowance?",
+    "expected_sources": ["remote_work_policy.md", "legacy_remote_memo.md"], "expected_answer_contains": ["no", "$600"],
+    "expected_evidence": [
+      {"source": "legacy_remote_memo.md", "contains": ["no home-office allowance"]},
+      {"source": "remote_work_policy.md", "contains": ["$600"]}
+    ]
+  },
+  {
+    "id": "missing-01", "category": "missing-information", "question": "Who is the company's chief executive officer?",
+    "expected_behavior": "refuse", "expected_sources": [], "expected_answer_contains": []
+  },
+  {
+    "id": "missing-02", "category": "missing-information", "question": "What is the maternity leave allowance?",
+    "expected_behavior": "refuse", "expected_sources": [], "expected_answer_contains": []
+  },
+  {
+    "id": "missing-03", "category": "missing-information", "question": "What was Product Alpha's Q3 revenue?",
+    "expected_behavior": "refuse", "expected_sources": [], "expected_answer_contains": []
+  },
+  {
+    "id": "missing-04", "category": "missing-information", "question": "What is the cafeteria's Friday dessert?",
+    "expected_behavior": "refuse", "expected_sources": [], "expected_answer_contains": []
+  },
+  {
+    "id": "keyword-01", "category": "keyword-heavy", "question": "MFA VPN source control administrative systems requirement",
+    "expected_sources": ["security_policy.md"], "expected_answer_contains": ["Multi-factor authentication"],
+    "expected_evidence": [{"source": "security_policy.md", "contains": ["email, VPN, source control"]}]
+  },
+  {
+    "id": "keyword-02", "category": "keyword-heavy", "question": "Product Alpha Wi-Fi 6 Bluetooth 5.3 cellular",
+    "expected_sources": ["product_alpha.md"], "expected_answer_contains": ["Wi-Fi 6", "Bluetooth 5.3"],
+    "expected_evidence": [{"source": "product_alpha.md", "contains": ["Wi-Fi 6", "Bluetooth 5.3"]}]
+  },
+  {
+    "id": "distractor-01", "category": "distractor", "question": "What meal allowance applies to business travel, not cafeteria purchases?",
+    "expected_sources": ["travel_policy.md"], "expected_answer_contains": ["$65"],
+    "expected_evidence": [{"source": "travel_policy.md", "contains": ["daily meal allowance is $65"]}]
+  },
+  {
+    "id": "distractor-02", "category": "distractor", "question": "What time are core collaboration hours, not cafeteria breakfast hours?",
+    "expected_sources": ["employee_handbook.md"], "expected_answer_contains": ["10:00", "15:00"],
+    "expected_evidence": [{"source": "employee_handbook.md", "contains": ["10:00 to 15:00"]}]
+  },
+  {
+    "id": "follow-01", "category": "conversational-follow-up", "question": "How much is that allowance?",
+    "standalone_question": "How much is the annual wellness allowance?",
+    "conversation": [{"role": "user", "content": "Tell me about the wellness benefit."}],
+    "expected_sources": ["benefits_2026.md"], "expected_answer_contains": ["$300"],
+    "expected_evidence": [{"source": "benefits_2026.md", "contains": ["wellness allowance is $300"]}]
+  },
+  {
+    "id": "follow-02", "category": "conversational-follow-up", "question": "When must it be reported?",
+    "standalone_question": "When must a suspected security incident be reported?",
+    "conversation": [{"role": "user", "content": "What counts as a suspected security incident?"}],
+    "expected_sources": ["security_policy.md"], "expected_answer_contains": ["30 minutes"],
+    "expected_evidence": [{"source": "security_policy.md", "contains": ["within 30 minutes"]}]
+  },
+  {
+    "id": "follow-03", "category": "conversational-follow-up", "question": "Does it support cellular too?",
+    "standalone_question": "Does Product Alpha support cellular connectivity?",
+    "conversation": [{"role": "user", "content": "Explain Product Alpha connectivity."}],
+    "expected_sources": ["product_alpha.md"], "expected_answer_contains": ["does not"],
+    "expected_evidence": [{"source": "product_alpha.md", "contains": ["does not include cellular connectivity"]}]
+  },
+  {
+    "id": "follow-04", "category": "conversational-follow-up", "question": "What changed in the newer one?",
+    "standalone_question": "What changed from the legacy 2022 remote-work memo to the 2025 Remote Work Policy?",
+    "conversation": [{"role": "user", "content": "Compare the two remote-work documents."}],
+    "expected_sources": ["remote_work_policy.md", "legacy_remote_memo.md"],
+    "expected_answer_contains": ["3 days", "$600", "superseded"],
+    "expected_evidence": [
+      {"source": "remote_work_policy.md", "contains": ["3 days per week", "$600"]},
+      {"source": "legacy_remote_memo.md", "contains": ["not permitted", "no home-office allowance"]}
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+playwright-report/
+test-results/
+*.log
+.venv/
+venv/
+
+# Local data and generated indexes
+.docwise/
+chroma_db/
+docwise-storage/
+.playwright-data/
+data/*
+!data/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

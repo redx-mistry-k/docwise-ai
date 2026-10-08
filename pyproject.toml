@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "browser: opt-in real-browser tests that require Chrome/Edge and a Gemini credential",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
